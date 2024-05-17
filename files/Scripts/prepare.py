@@ -166,6 +166,9 @@ def prepare():
     set_config_to_environment('UT_ADMINNAME', utIniFileServer, 'Engine.GameReplicationInfo', 'AdminName')
     set_config_to_environment('UT_ADMINEMAIL', utIniFileServer, 'Engine.GameReplicationInfo', 'AdminEmail')
     set_config_to_environment('UT_MOTD1', utIniFileServer, 'Engine.GameReplicationInfo', 'MOTDLine1')
+    set_config_to_environment('UT_MOTD2', utIniFileServer, 'Engine.GameReplicationInfo', 'MOTDLine2')
+    set_config_to_environment('UT_MOTD3', utIniFileServer, 'Engine.GameReplicationInfo', 'MOTDLine3')
+    set_config_to_environment('UT_MOTD4', utIniFileServer, 'Engine.GameReplicationInfo', 'MOTDLine4')
     ## Replace / Add Master server connection information
     set_config_to_environment('UT_DOUPLINK', utIniFileServer, 'IpServer.UdpServerUplink', 'DoUpLink')
     ## Replace / Add Admin and Game password
@@ -176,6 +179,8 @@ def prepare():
     set_config_to_environment('UT_MINPLAYERS_CTF', utIniFileServer, 'Botpack.CTFGame', 'MinPlayers')
     set_config_to_environment('UT_INITIALBOTS_DM', utIniFileServer, 'Botpack.DeathMatchPlus', 'InitialBots')
     set_config_to_environment('UT_INITIALBOTS_CTF', utIniFileServer, 'Botpack.CTFGame', 'InitialBots')
+    ## Replace BOT Difficulty
+    set_config_to_environment('UT_BOT_DIFF', userIniFileServer, 'Botpack.ChallengeBotInfo', 'Difficulty')
 
 def move_and_symlink(fileSrc, fileDest):
     os.replace(fileSrc, fileDest)
