@@ -27,6 +27,9 @@ This basically works by having this files in this volume and on start of the ser
 | UT_ADMINNAME | No | If this variable is set, it will always override the admin name in `UnrealTournament.ini` with this on startup. |
 | UT_ADMINEMAIL | No | If this variable is set, it will always override the admin email in `UnrealTournament.ini` with this on startup. |
 | UT_MOTD1 | No | If this variable is set, it will always override the MOTD1 in `UnrealTournament.ini` with this on startup. |
+| UT_MOTD2 | No | If this variable is set, it will always override the MOTD2 in `UnrealTournament.ini` with this on startup. |
+| UT_MOTD3 | No | If this variable is set, it will always override the MOTD3 in `UnrealTournament.ini` with this on startup. |
+| UT_MOTD4 | No | If this variable is set, it will always override the MOTD4 in `UnrealTournament.ini` with this on startup. |
 | UT_DOUPLINK | No | If this variable is set, it will always override the DoUpLink in `UnrealTournament.ini` with this on startup. Default is `true`.|
 | UT_ADMINPWD | No | If this variable is set, it will always override the admin password in `UnrealTournament.ini` with this on startup. |
 | UT_GAMEPWD | No | If this variable is set, it will always override the game password in `UnrealTournament.ini` with this on startup. |
@@ -36,6 +39,7 @@ This basically works by having this files in this volume and on start of the ser
 | UT_MINPLAYERS_CTF | No | Set the minimum number of players in CTF.
 | UT_INITIALBOTS_DM | No | Set the initial number of bots in DeathMatchPlus.
 | UT_INITIALBOTS_CTF | No | Set the initial number of bots in CTF.
+| UT_BOT_DIFF | No | Set the initial difficulty for bots (easy 0 - 7 Godlike).
 
 ## Volumes
 As mentioned above, there is one named volume that should point to `/ut-data` in the container.
